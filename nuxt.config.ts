@@ -2,8 +2,11 @@ import { defineNuxtConfig } from 'nuxt/config'
 import vuetify from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
+  app: {
+    baseURL: '/GanttBuddy/'
+  },
   build: {
-    transpile: ['vuetify'],
+    transpile: ['/vuetify/'],
   },
   hooks: {
     'vite:extendConfig': (config) => {
